@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c35">
+  <title>Christ FM | Listen Live</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center;
+      padding: 24px; color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #263b61 0, #101c35 48%, #080f1e 100%);
+    }
+    .card {
+      width: min(100%, 480px); text-align: center; padding: 34px 24px;
+      border: 1px solid rgba(255,255,255,.16); border-radius: 24px;
+      background: rgba(255,255,255,.07); box-shadow: 0 18px 60px rgba(0,0,0,.3);
+    }
+    .cross { font-size: 38px; color: #e6c779; line-height: 1; }
+    h1 { margin: 14px 0 6px; letter-spacing: .12em; font-size: clamp(28px, 7vw, 40px); }
+    .sub { color: #d4dced; font-size: 13px; letter-spacing: .08em; }
+    .live { display: inline-block; margin: 24px 0 14px; padding: 7px 13px;
+      border-radius: 999px; color: #dff8e8; background: rgba(36,180,105,.18);
+      font-size: 12px; letter-spacing: .1em; }
+    .player-wrap {
+      display: flex; justify-content: center; align-items: center; min-height: 90px;
+      padding: 14px; border-radius: 16px; background: #fff; color: #17233a;
+      overflow: auto;
+    }
+    .hint { margin: 16px 0 0; color: #c2ccdc; font-size: 13px; line-height: 1.5; }
+    footer { margin-top: 28px; color: #9eabc0; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="cross" aria-hidden="true">✝</div>
+    <h1>CHRIST FM</h1>
+    <div class="sub">CSI CHRIST CHURCH · VIRUGAMBAKKAM</div>
+    <div class="live">● LISTEN LIVE</div>
+    <section class="player-wrap" aria-label="Christ FM audio player">
+      <div class="cc_player" data-skin="mcclean" data-width="180" data-height="60" data-username="csichristfm">Loading ...</div>
+    </section>
+    <p class="hint">Tamil Christian Songs · Gospel · Worship<br>Press Play to listen live.</p>
+    <footer>CHRIST FM · CHENNAI</footer>
+  </main>
+  <script language="javascript" type="text/javascript" src="https://usa3.fastcast4u.com/system/player.js"></script>
+</body>
+</html>
